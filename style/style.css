@@ -36,8 +36,8 @@ body {
   margin: auto;
 }
 .element:hover {
-  filter: saturate(200%);
-  transition: 2s;
+  opacity: 0.5;
+  transition-duration: 2s;
 
 }
 .header__logo {
