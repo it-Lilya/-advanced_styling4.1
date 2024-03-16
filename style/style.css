@@ -17,14 +17,14 @@ body {
   font-family: "TT Lakes";
   width: 320px;
   height: 100vh;
-  left: 0;
   box-shadow: 20px 10px 25px 5px #dadce0d9;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 18.73px;
-  display: flex;
-  flex-direction: column;
+  padding-top: 1.76vh;
+  padding-bottom: 3.12vh;
+  position: relative;
 }
+
 .header {
   display: flex;
   align-items: center;
@@ -52,8 +52,9 @@ body {
   margin-left: auto;
 }
 .basic {
-  height: 45%;
-  padding-top: 16%;
+  height: 48%;
+  padding-top: 4.52vh;
+  margin-bottom: auto;
 }
 .basic__navigation {
   height: 100%;
@@ -80,41 +81,39 @@ body {
   margin-top: -4px;
 }
 .footer {
-  height: 18.3%;
+  position: absolute;
+  bottom: 3.12vh;
   display: flex;
   flex-direction: column;
-  margin-top: auto;
-  margin-bottom: 11%;
+  width: 90%;
 }
 .footer__container-buttons {
   display: flex;
   justify-content: space-between;
   width: 53%;
 }
-.footer__container {
-  display: flex;
-  margin-top: 14%;
-}
+
 .footer > a, .footer__container > a {
-  display: block;
   text-decoration: none;
   color: #1B1C21;
 }
 .footer__email {
-  margin-top: 8%;
+  margin-top: 1.57vh;
 }
 .footer__tel {
-  margin-top: 6%;
+  margin-top: 1.18vh;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
+}
+.footer__container {
+  display: flex;
+  margin-top: 4vh;
+
 }
 .footer__container > a:not(last-child) {
   margin-right: 7px;
 }
 .footer__container > a:first-child {
   color: #7E7E82;
-}
-.footer > button {
-  display: inline-block
 }
