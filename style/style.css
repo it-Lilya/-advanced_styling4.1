@@ -24,7 +24,6 @@ body {
   padding-bottom: 3.12vh;
   display: flex;
   flex-direction: column;
-  /* position: relative; */
 }
 
 .header {
@@ -54,7 +53,7 @@ body {
   margin-left: auto;
 }
 .basic {
-  height: 48%;
+  height: 43.12vh;
   padding-top: 4.52vh;
   margin-bottom: auto;
 }
