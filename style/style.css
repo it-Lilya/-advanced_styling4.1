@@ -29,8 +29,6 @@ body {
   width: 320px;
   height: 100vh;
   box-shadow: 20px 10px 25px 5px #dadce0d9;
-  padding-left: 24px;
-  padding-right: 24px;
   padding-top: 18.3px;
   padding-bottom: 32px;
   display: flex;
@@ -39,6 +37,8 @@ body {
 .header {
   display: flex;
   align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .button {
   border: none;
@@ -64,7 +64,7 @@ body {
 }
 .basic {
   min-height: 42.5%;
-  padding-top: 2.9em;
+  padding-top: 47px;
 }
 .basic__navigation {
   height: 100%;
@@ -73,21 +73,27 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 27px;
   overflow-y: auto;
+  position: relative;
+  content: '';
 }
-.basic__navigation > ul> li {
+.basic__navigation > ul > li {
   list-style: none;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .basic__navigation > ul > li > a {
   text-decoration: none;
   color: #1B1C21;
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
-
-.basic__navigation > ul > li > a:first-child {
+.basic__navigation > ul > .element-active > a {
   color: #7E7E82;
 }
-.basic__navigation > ul > li:first-child:before {
+.element-active:before {
   content: '';
   position: absolute;
   border-top-right-radius: 100px;
@@ -96,7 +102,8 @@ body {
   height: 32px;
   background-color: #41F6D7;
   left: 0;
-  margin-top: -4px;
+  /* top: -4px; */
+  /* z-index: 10; */
 }
 .footer {
   height: 188px;
@@ -104,6 +111,8 @@ body {
   flex-direction: column;
   gap: 40px;
   margin-top: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .footer__container {
   display: flex;
